@@ -3,9 +3,6 @@ import sys
 from pathlib import Path
 from typing import Optional, Tuple
 
-from PySide6.QtCore import QCoreApplication
-from PySide6.QtWidgets import QApplication
-
 from pyisotools import __version__
 from pyisotools.gui.mainwindow import Ui_MainWindow
 from pyisotools.gui.connector import Controller
@@ -23,18 +20,6 @@ def main(argv: Optional[Tuple] = None):
             Controller.get_window_title()
         )
 
-    if len(argv) == 0:
-        app = QApplication()
-        central = Ui_MainWindow()
-        mainWindow = Controller(central)
-        central.setupUi(mainWindow)
-        mainWindow.load_program_config()
-        mainWindow.update_theme(mainWindow.theme)
-        mainWindow.setWindowTitle(QCoreApplication.translate(
-            "MainWindow", f"pyisotools v{__version__}", None))
-        mainWindow.show()
-        sys.exit(app.exec())
-    else:
         from argparse import ArgumentParser
 
         parser = ArgumentParser(
