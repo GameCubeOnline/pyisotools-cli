@@ -4,8 +4,6 @@ from pathlib import Path
 from typing import Optional, Tuple
 
 from pyisotools import __version__
-from pyisotools.gui.mainwindow import Ui_MainWindow
-from pyisotools.gui.connector import Controller
 from pyisotools.iso import GamecubeISO
 
 
