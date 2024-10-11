@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: PyISOTools-win32
-        path: D:\a\pyisotools\pyisotools\bin
+        path: D:\a\pyisotools-cli\pyisotools-cli\dist
