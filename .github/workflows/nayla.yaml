@@ -26,7 +26,7 @@ jobs:
 
     # Build Project
     - name: Build Project
-      run: pyinstaller --onefile --icon="pyisotools/gui/icons/pyisotools.ico" "pyisotools/__main__.py" --exclude-module PySide6 --exclude-module QDarkStyle
+      run: pyinstaller --onefile --icon="pyisotools/pyisotools.ico" "pyisotools/__main__.py" --exclude-module PySide6 --exclude-module QDarkStyle
 
     # Upload Artifact
     - name: Upload Artifact
