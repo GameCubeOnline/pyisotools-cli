@@ -4,4 +4,4 @@ dolreader
 sortedcontainers
 pillow
 pygithub
-pyinstaller
+pyinstaller == 5.13.2
